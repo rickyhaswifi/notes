@@ -38,28 +38,62 @@
     height: 87vh;
 }
 
-.post-note {
+/* CONTENT FOR INDEX */
+.all-notes {
     text-align: center;
-    padding-top: 20px; 
-    width: 100px;
-    height: 100px;
-    border-radius: 0 0 20px 0 !important;
+    margin: auto !important;
 }
 
-.post-note:nth-child(odd){
-    background-color: #1DD760; !important;
-    left: auto;
-    right: 0;
+.btn.new-note{
+    margin: auto;
+    color: white !important;
+    width: 100% !important;
 }
-.post-note:nth-child(even){
-    background-color: rgb(247, 182, 41); !important;
-    padding-right: 10px;
-    padding-left: 0;
+.btn.new-note a{
+    color: white !important;
+}
+
+.all-notes ul {
+    display: inline-block;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.post-note {
+    float: left;
+    text-align: center;
+    padding-top: 30px; 
+    margin: 3rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 0 0 20px 0 !important;
+    box-shadow: 5px 5px 10px #000 ;
+}
+
+a .post-title-index{
+    text-decoration: none !important;
+    color: gold !important;
+}
+
+.post-body-index{
+    text-decoration: none !important;
 }
 
 .post-note a{
-    color: white !important;
+    color: black !important;
+
 }
+
+
+.post-note:nth-child(odd){
+    background:linear-gradient(45deg, #1DD760,rgb(19, 180, 78) ) !important;
+}
+.post-note:nth-child(even){
+    background:linear-gradient(45deg, #FFBF00,rgb(189, 126, 9) ) !important;
+}
+
+
+/* GLOBAL */
 
 footer {
     padding-top: .5rem;

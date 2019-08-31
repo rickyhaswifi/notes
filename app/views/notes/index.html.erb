@@ -1,19 +1,26 @@
 <div class="row">
-<div class="col"></div>
-<div class="col-10">
+    <div class="col"></div>
+        <div class="col-10">
+            <div class='all-notes'>
+            <h1> Post it notes </h1>
 
-<h1> Post it notes </h1>
+            <ul class="mb-3">
+                <% @notes.each do |note| %>
+                <li class="card mb-3 post-note"> <h2 class="post-title-index"> <%= link_to note.title, note, :class => 'post-title-index'  %>  </h2>  <p> <%= link_to note.body, note, :class => 'post-body-index' %> <p> </li>
+                <% end %>
+            </ul>
 
-<ul class="mb-3">
-    <% @notes.each do |note| %>
-    <li class="card mb-3 post-note"> <%= link_to note.title, note %></li>
-    <% end %>
-</ul>
-
-<button class="btn btn-success-border mb-3">
-<%= link_to 'Create new note', new_note_path %>
-</button>
-
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                    <div class="col-4">
+                                <button class="btn btn-primary mt-3 mb-3 new-note">
+                    <%= link_to 'Create new note', new_note_path %>
+                    </button>
+                    </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    <div class="col"></div>
 </div>
-<div class="col"></div>
-</div>
+
