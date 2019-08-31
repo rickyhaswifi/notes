@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+ }
+
+.navbar a{
+    color: white !important;
+    padding: 0 0 0 1rem;
+
+}
+
+.jumbotron {
+    /* width: 100% !important; */
+}
+
+.navbar a:hover {
+    color: #1DD760 !important;
+    text-decoration: none !important;
+}
+
+.home {
+    padding-top: 3em; 
+    text-align: center;
+    height: 87vh;
+}
+
+.post-note {
+    text-align: center;
+    padding-top: 20px; 
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 20px 0 !important;
+}
+
+.post-note:nth-child(odd){
+    background-color: #1DD760; !important;
+    left: auto;
+    right: 0;
+}
+.post-note:nth-child(even){
+    background-color: rgb(247, 182, 41); !important;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.post-note a{
+    color: white !important;
+}
+
+footer {
+    padding-top: .5rem;
+    height: 5vh;
+    text-align: center;
+    color: white;
+    background-color: #1c1c1c;
+}
+
+.partial-form-body {
+    background-color: #121212 !important;
+    height: 100vh;
+}
+
+.partial-form {
+    background-color: #fafafa;
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 1rem;
+}

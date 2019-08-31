@@ -1,0 +1,40 @@
+<head>
+<link rel="stylesheet" href="/assets/application.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<div class="partial-form-body">
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
+            <div class="partial-form">
+            
+                <h1>Post It Notes</h1>
+                <h2> <%  @note.id ? 'Edit Note' : 'Create Note' %> </h2>
+
+                <%= form_for @note do |f| %>
+
+                <%= f.label :title %>  <br>
+                <%= f.text_field :title, :class => 'form-control' %>
+                <br>
+                <%= f.label :body %>  <br>
+                <%= f.text_area :body, :class => 'form-control' %>
+                  <br>
+              <%= f.submit 'Submit', :class => 'btn btn-primary' %>
+
+                <% end %>
+
+                <hr>
+
+                <button>
+                <%= link_to 'Cancel', root_path%>
+                </button>
+
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+
+</div>
+
+

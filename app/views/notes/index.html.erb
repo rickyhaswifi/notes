@@ -1,0 +1,19 @@
+<div class="row">
+<div class="col"></div>
+<div class="col-10">
+
+<h1> Post it notes </h1>
+
+<ul class="mb-3">
+    <% @notes.each do |note| %>
+    <li class="card mb-3 post-note"> <%= link_to note.title, note %></li>
+    <% end %>
+</ul>
+
+<button class="btn btn-success-border mb-3">
+<%= link_to 'Create new note', new_note_path %>
+</button>
+
+</div>
+<div class="col"></div>
+</div>
